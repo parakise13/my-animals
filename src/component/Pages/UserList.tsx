@@ -34,10 +34,10 @@ const UserList = () => {
     <Fragment>
       {isLoading && <LoadingSpinner isLoading={isLoading} />}
       {error && <ErrorModal onClose={clearError} errorText={error} />}
-      {loadedUsers && loadedUsers.length === 0 && (
+      {!isLoading && loadedUsers && loadedUsers.length === 0 && (
         <div className={classes["user-list__empty"]}>사용자가 존재하지 않습니다.</div>
       )}
-      {loadedUsers &&
+      {!isLoading && loadedUsers &&
         loadedUsers.map((user) => {
           return (
             <ul key={user.id} className={classes["user-list"]}>

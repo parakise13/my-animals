@@ -57,8 +57,8 @@ const UserAnimalList = () => {
     }
   };
 
-  if (loadedAnimals) {
-    if (loadedAnimals.length === 0) {
+  // if (loadedAnimals) {
+    if (!isLoading && loadedAnimals.length === 0) {
       if (auth.userId) {
         return (
           <div className={classes["no-animal"]}>
@@ -79,7 +79,7 @@ const UserAnimalList = () => {
         );
       }
     }
-  }
+  // }
 
   return (
     <Fragment>

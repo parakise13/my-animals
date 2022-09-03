@@ -29,6 +29,7 @@
         margin: calc(#{$padding} * 2) auto;
         display: flex;
         justify-content: center;
+        transition: ease 0.5s;
 
         &:hover {
           border-radius: calc(#{$padding} * 2);
@@ -39,6 +40,8 @@
 
         img {
           height: 100%;
+          width: 100%;
+          object-fit: cover;
         }
       }
       .animal-list__detail {
