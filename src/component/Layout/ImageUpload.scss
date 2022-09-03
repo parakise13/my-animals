@@ -1,0 +1,22 @@
+@import "../../Constant.scss";
+
+.image-upload {
+  text-align: center;
+
+  .image-upload__preview{
+    margin: $padding auto;
+    width: 200px;
+    height: 200px;
+    border: 1px solid $blue;
+    border-radius: calc(#{$padding} / 2);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+
+    img{
+      height: 100%;
+      width: 100%;
+      object-fit:cover;
+    }
+  }
+}

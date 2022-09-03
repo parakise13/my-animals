@@ -1,0 +1,62 @@
+@import '../../Constant.scss';
+
+.user-list{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	list-style: none;
+	flex-direction: column;
+	margin-top: calc(#{$padding} * 2);
+	
+	li{
+		width: 400px;
+		background-color: $light-pink;
+		border-radius: $padding;
+
+		.user-list__container{
+			a{
+				border-radius: $padding;
+				padding: calc(#{$padding});
+				display: flex;
+				align-items: center;
+				width: 100%;
+				
+				&:hover{
+					background-color: $pink;
+					transition: ease .3s;
+				}
+
+				.user-list__image{
+					margin-right: $padding;
+				}
+
+				.user-list__info{
+					p{
+						&:first-child{
+							font-size: $sub-font-size;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+.user-list__empty{
+	max-width: 800px;
+	width: 100%;
+	margin: $padding*3 auto;
+	text-align: center;
+	background-color: $light-pink;
+	border-radius: $padding;
+	padding: $padding*2;
+	font-size: $menu-font-size;
+	word-break: keep-all;
+}
+
+@media all and (max-width: 767px) {
+	.user-list__empty{
+		width: 80%;
+		font-size: $middle-font-size;
+	}
+}

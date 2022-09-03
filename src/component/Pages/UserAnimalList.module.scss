@@ -1,0 +1,164 @@
+@import "../../Constant.scss";
+
+.animal-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  flex-direction: column;
+  margin-top: calc(#{$padding} * 2);
+
+  li {
+    max-width: 800px;
+    width: 100%;
+    background-color: $light-pink;
+    border-radius: $padding;
+    margin-bottom: calc(#{$padding} * 2);
+
+    .animal-list__wrapper {
+      text-align: center;
+      width: 100%;
+
+      .animal-list__image {
+        max-width: 350px;
+        width: 100%;
+        height: 350px;
+        overflow: hidden;
+        text-align: center;
+        border-radius: 50%;
+        margin: calc(#{$padding} * 2) auto;
+        display: flex;
+        justify-content: center;
+
+        &:hover {
+          border-radius: calc(#{$padding} * 2);
+          max-width: 500px;
+          width: 58%;
+          transition: ease 0.5s;
+        }
+
+        img {
+          height: 100%;
+        }
+      }
+      .animal-list__detail {
+        font-size: $middle-font-size;
+        display: flex;
+        justify-content: center;
+        margin-bottom: $padding;
+
+        p {
+          &:not(:last-child) {
+            margin-right: calc(#{$padding} * 2);
+          }
+        }
+      }
+      .animal-list__desc {
+        background-color: $extra-light-blue;
+        border: 1px solid $blue;
+        padding: $padding;
+        margin: $padding;
+        border-radius: calc(#{$padding} / 2);
+        text-align: left;
+      }
+    }
+    .animal-list__btns {
+      padding: $padding;
+      margin: $padding;
+      text-align: center;
+      font-size: $middle-font-size;
+
+      a,
+      button {
+        background-color: $light-blue;
+        display: inline-block;
+        font-size: $middle-font-size;
+        border: 1px solid $blue;
+        border-radius: calc(#{$borderRadius} - 8px);
+        padding: calc(#{$padding} - 15px) $padding;
+        transition: 0.5s ease-in-out;
+
+        &:hover {
+          background-color: $pink;
+        }
+      }
+
+      button {
+        margin-left: $padding;
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+.no-animal {
+  text-align: center;
+  max-width: 800px;
+  width: 100%;
+  background-color: $light-pink;
+  border-radius: $padding;
+  margin: calc(#{$padding} * 2) auto;
+  padding: calc(#{$padding} * 2);
+
+  h2 {
+    &:last-of-type {
+      margin-top: calc(#{$padding / 2});
+    }
+  }
+
+  a {
+    background-color: $light-blue;
+    display: inline-block;
+    font-size: $middle-font-size;
+    border: 1px solid $blue;
+    border-radius: calc(#{$borderRadius} - 8px);
+    padding: calc(#{$padding} - 15px) $padding;
+    transition: 0.5s ease-in-out;
+    margin-top: calc(#{$padding});
+
+    &:hover {
+      background-color: $pink;
+    }
+  }
+}
+
+@media all and (max-width: 767px) {
+  .animal-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    flex-direction: column;
+    margin-top: calc(#{$padding} * 2);
+
+    li {
+      width: 90%;
+      .animal-list__wrapper {
+        .animal-list__image {
+  
+          &:hover {
+            max-width: 350px;
+          }
+        }
+
+
+
+        .animal-list__detail {
+          flex-direction: column;
+          p {
+            &:not(:last-child) {
+              margin-right: 0px;
+              margin-bottom: 5px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .no-animal {
+    width: 90%;
+  }
+}

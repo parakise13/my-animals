@@ -1,0 +1,99 @@
+@import "../../Constant.scss";
+
+.new-animal {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  list-style: none;
+  flex-direction: column;
+  width: 800px;
+  background-color: $light-pink;
+  margin: calc(#{$padding} * 3) auto;
+  border-radius: $padding;
+  padding: $padding;
+  padding-bottom: 0;
+  form {
+    width: 100%;
+  }
+
+  h2 {
+    font-weight: 100;
+    font-size: $sub-font-size;
+    margin-bottom: $padding;
+  }
+
+  .new-animal__detail {
+    font-size: $middle-font-size;
+    div {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      margin-bottom: calc(#{$padding} / 2);
+      label {
+        width: 80px;
+        margin-bottom: calc(#{$padding} / 2);
+      }
+    }
+  }
+
+  .new-animal__desc {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: $middle-font-size;
+    margin-top: $padding;
+
+    label {
+      width: 80px;
+    }
+  }
+
+  .new-animal__btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  button {
+    padding: $padding;
+    margin: $padding;
+    font-size: $middle-font-size;
+
+    background-color: $light-blue;
+    display: inline-block;
+    font-size: $middle-font-size;
+    border: 1px solid $blue;
+    border-radius: calc(#{$borderRadius} - 8px);
+    padding: calc(#{$padding} - 15px) $padding;
+    transition: 0.5s ease-in-out;
+
+    &:hover {
+      background-color: $pink;
+      cursor: pointer;
+    }
+    &:disabled{
+      background-color: $gray;
+      cursor: not-allowed;
+    }
+  }
+}
+
+@media all and (max-width: 767px) {
+  .new-animal {
+    width: 90%;
+    .new-animal__detail {
+      div{
+
+        label{
+          width: 60px;
+        }
+      }
+    }
+
+    .new-animal__desc {
+      label {
+        width: 60px;
+      }
+    }
+  
+  }
+}

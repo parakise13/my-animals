@@ -1,0 +1,36 @@
+@import "../../Constant.scss";
+
+.main{
+	max-width: 800px;
+	margin: calc(#{$padding} * 3)  auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	.main__img{
+		text-align: center;
+		width: 512px;
+
+		img{
+			width: 100%;
+		}
+	}
+
+	.main__text{
+		text-align: center;
+		font-size: $sub-font-size;
+		line-height: 1.7;
+		margin-top: $padding;
+	}
+}
+
+@media all and (max-width:1024px) {
+	.main{
+		.main__img{
+			width: 400px;
+		}
+		.main__text{
+			font-size: $menu-font-size;
+		}
+	}
+}

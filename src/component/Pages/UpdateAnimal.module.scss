@@ -1,0 +1,89 @@
+@import "../../Constant.scss";
+
+.animal-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  flex-direction: column;
+  max-width: 800px;
+  width: 100%;
+  background-color: $light-pink;
+  margin: calc(#{$padding} * 3) auto;
+  border-radius: $padding;
+  padding: $padding;
+  padding-bottom: 0;
+  > div {
+    width: 100%;
+  }
+
+  .animal-list__detail {
+    // display: flex;
+    // justify-content: center;
+    // margin-bottom: $padding;
+    font-size: $middle-font-size;
+
+    div {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      margin-bottom: calc(#{$padding} / 2);
+
+      label {
+        width: 80px;
+      }
+    }
+  }
+
+  .update-animal__desc {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: $middle-font-size;
+
+    label {
+      width: 80px;
+    }
+  }
+
+  .animal-list__btns {
+    padding: $padding;
+    margin: $padding;
+    text-align: center;
+    font-size: $middle-font-size;
+
+    background-color: $light-blue;
+    display: inline-block;
+    font-size: $middle-font-size;
+    border: 1px solid $blue;
+    border-radius: calc(#{$borderRadius} - 8px);
+    padding: calc(#{$padding} - 15px) $padding;
+    transition: 0.5s ease-in-out;
+
+    &:hover {
+      background-color: $pink;
+      cursor: pointer;
+    }
+    &:disabled {
+      background-color: $gray;
+      cursor: not-allowed;
+    }
+  }
+}
+
+.not-found {
+  text-align: center;
+  width: 800px;
+  background-color: $light-pink;
+  border-radius: $padding;
+  margin: calc(#{$padding} * 2) auto;
+  padding: calc(#{$padding} * 2);
+}
+
+
+@media all and (max-width: 767px) {
+  .animal-list {
+    width: 90%;
+  }
+
+}

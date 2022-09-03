@@ -1,0 +1,48 @@
+@import "../../Constant.scss";
+
+// form {
+  .form-control {
+    margin: auto;
+    width: calc(100% - 80px);
+    input {
+      font-size: $middle-font-size;
+      width: 250px;
+      // height: calc(#{$padding} + 10px);
+      padding: calc(#{$padding} - 15px) calc(#{$padding} / 2);
+      border-radius: calc(#{$padding} / 2);
+      border: 1px solid $blue;
+
+      &:not(:last-child) {
+        margin-right: $padding;
+      }
+      &::placeholder {
+        font-size: $font-size;
+      }
+    }
+    textarea {
+      font-size: $middle-font-size;
+      width: 100%;
+      padding: calc(#{$padding} - 15px) calc(#{$padding} / 2);
+      border-radius: calc(#{$padding} / 2);
+      border: 1px solid $blue;
+      min-height: 150px;
+
+      &::placeholder {
+        font-size: $font-size;
+      }
+    }
+    &.form-control__invalid {
+      input {
+        margin: 10px auto;
+        border: 1px solid red;
+        background-color: $pink;
+      }
+    }
+    p.error-text {
+			text-align: left;
+      font-size: $small-font-size;
+			margin-bottom: calc(#{$padding} / 2);
+			margin-left: $padding;
+    }
+  }
+// }
