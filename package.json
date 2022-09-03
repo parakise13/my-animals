@@ -57,5 +57,5 @@
     "@types/react-router": "^5.1.18",
     "@types/react-router-dom": "^5.3.3"
   },
-  "homepage": "https://parakise13.github.io/my-animals/"
+  "homepage": "https://parakise13.github.io/my-animals"
 }
