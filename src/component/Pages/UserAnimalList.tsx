@@ -106,10 +106,17 @@ const UserAnimalList = () => {
                     </div>
                   </div>
                   <div className={classes["animal-list__desc"]}>
-                    {animal.description}
+                    {animal.description.split("\n").map((line) => {
+                      return (
+                        <span>
+                          {line}
+                          <br />
+                        </span>
+                      );
+                    })}
                   </div>
                 </div>
-                {(auth.userId === animal.creator) && (
+                {auth.userId === animal.creator && (
                   <div className={classes["animal-list__btns"]}>
                     <Link to={`/animal/${animal.id}`}>수정하기</Link>
                     <button
