@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/my-animals/static/css/main.2cf5521d.css",
-    "main.js": "/my-animals/static/js/main.30d8537f.js",
+    "main.js": "/my-animals/static/js/main.ec88242e.js",
     "static/css/866.f2740cc7.chunk.css": "/my-animals/static/css/866.f2740cc7.chunk.css",
     "static/js/866.291402f9.chunk.js": "/my-animals/static/js/866.291402f9.chunk.js",
     "static/css/47.bab8072f.chunk.css": "/my-animals/static/css/47.bab8072f.chunk.css",
@@ -21,7 +21,7 @@
     "static/media/animal-shelter.png": "/my-animals/static/media/animal-shelter.7b238b9ae7f2954cb729.png",
     "index.html": "/my-animals/index.html",
     "main.2cf5521d.css.map": "/my-animals/static/css/main.2cf5521d.css.map",
-    "main.30d8537f.js.map": "/my-animals/static/js/main.30d8537f.js.map",
+    "main.ec88242e.js.map": "/my-animals/static/js/main.ec88242e.js.map",
     "866.f2740cc7.chunk.css.map": "/my-animals/static/css/866.f2740cc7.chunk.css.map",
     "866.291402f9.chunk.js.map": "/my-animals/static/js/866.291402f9.chunk.js.map",
     "47.bab8072f.chunk.css.map": "/my-animals/static/css/47.bab8072f.chunk.css.map",
@@ -41,6 +41,6 @@
   },
   "entrypoints": [
     "static/css/main.2cf5521d.css",
-    "static/js/main.30d8537f.js"
+    "static/js/main.ec88242e.js"
   ]
 }
