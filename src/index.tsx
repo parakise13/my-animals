@@ -10,11 +10,11 @@ const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
 );
 root.render(
-  <Provider store={store}>
-    {/* <BrowserRouter basename={process.env.PUBLIC_URL}> */}
+  // <Provider store={store}>
+    // {/* <BrowserRouter basename={process.env.PUBLIC_URL}> */}
     <HashRouter>
       <App />
     </HashRouter>
-    {/* </BrowserRouter> */}
-  </Provider>
+    // {/* </BrowserRouter> */}
+  // </Provider>
 );

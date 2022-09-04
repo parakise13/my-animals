@@ -3,7 +3,8 @@
 .auth-container {
   background-color: $light-pink;
   margin: calc(#{$padding} * 2) auto;
-  width: 500px;
+  max-width: 500px;
+  width: 100%;
   border-radius: $padding;
   padding: $padding;
 
@@ -16,7 +17,8 @@
     // width: 100%;
 
     input {
-      width: 300px;
+      max-width: 300px;
+      width: 100%;
       display: flex;
       justify-content: center;
 
@@ -55,5 +57,21 @@
     text-align: center;
     margin-top: calc(#{$padding} - 10px);
 
+  }
+}
+
+@media all and (max-width: 767px) {
+  .auth-container {
+    width: 90%;
+
+    form.auth-form {
+      input {
+        width: 100%;
+
+        &::placeholder {
+          font-size: $small-font-size;
+        }
+      }
+    }
   }
 }

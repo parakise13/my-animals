@@ -9,7 +9,8 @@
 	margin-top: calc(#{$padding} * 2);
 	
 	li{
-		width: 400px;
+		max-width: 400px;
+		width: 100%;
 		background-color: $light-pink;
 		border-radius: $padding;
 
@@ -55,6 +56,11 @@
 }
 
 @media all and (max-width: 767px) {
+	.user-list{
+		li{
+			width: 80%;
+		}
+	}
 	.user-list__empty{
 		width: 80%;
 		font-size: $middle-font-size;

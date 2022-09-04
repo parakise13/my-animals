@@ -10,7 +10,7 @@ export interface ImageUploadProps {
 const ImageUpload = (props: ImageUploadProps) => {
   const [file, setFile] = useState<File>();
   const [previewUrl, setPreviewUrl] = useState<string | ArrayBuffer | null>();
-  const [isValid, setIsValid] = useState(false);
+  const [isValid, setIsValid] = useState(true);
 
   const filePickerRef = useRef<any>();
 
@@ -67,7 +67,7 @@ const ImageUpload = (props: ImageUploadProps) => {
           사진 선택
         </button>
       </div>
-      {!isValid && `* ${props.errorText}`}
+      <p>{!isValid && `* ${props.errorText}`}</p>
     </div>
   );
 };

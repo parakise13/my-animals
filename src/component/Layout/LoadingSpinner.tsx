@@ -1,5 +1,6 @@
 import { CSSProperties } from "react";
 import { PacmanLoader } from "react-spinners";
+import "./LoadingSpinner.scss";
 
 export interface LoadingProps {
   isLoading: boolean;
@@ -22,7 +23,7 @@ const LoadingSpinner = (props: LoadingProps) => {
         color={"#91a8d0"}
         loading={props.isLoading}
         cssOverride={override}
-        size={80}
+        size={60}
       />
     </div>
   );

@@ -9,7 +9,8 @@
 
 	.main__img{
 		text-align: center;
-		width: 512px;
+		max-width: 512px;
+		width: 100%;
 
 		img{
 			width: 100%;
@@ -21,13 +22,15 @@
 		font-size: $sub-font-size;
 		line-height: 1.7;
 		margin-top: $padding;
+		word-break: keep-all;
 	}
 }
 
 @media all and (max-width:1024px) {
 	.main{
 		.main__img{
-			width: 400px;
+			max-width: 400px;
+			width: 80%;
 		}
 		.main__text{
 			font-size: $menu-font-size;

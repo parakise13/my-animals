@@ -1,0 +1,9 @@
+@import "../../Constant.scss";
+
+@media all and (max-width: 767px) {
+  .sweet-loading {
+    > span{
+      left: 40% !important;
+    }
+  }
+}

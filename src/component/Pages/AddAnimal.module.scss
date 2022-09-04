@@ -82,9 +82,17 @@
     width: 90%;
     .new-animal__detail {
       div{
-
+        flex-wrap: wrap;
+        align-items: flex-start;
         label{
           width: 60px;
+        }
+
+        .form-control__invalid{
+          
+          .error-text{
+            width: 100%;
+          }
         }
       }
     }
